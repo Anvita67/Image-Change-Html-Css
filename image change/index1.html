@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title> change image using onclick() event </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  	<img id="image1" src=" ./img1.jpg" alt="" onclick="changeImage()">
+	<script>
+	  function changeImage(){
+	    let displayImage = document.getElementById('image1')
+	    if(displayImage.src.match('./img1.jpg')){
+	       displayImage.src='./img2.jpg'
+	    } else {
+	       displayImage.src='./img1.jpg'
+	    }
+	}
+        </script>
+	
+</body>
+</html>
